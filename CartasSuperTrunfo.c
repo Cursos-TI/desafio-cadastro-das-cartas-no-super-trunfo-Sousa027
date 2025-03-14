@@ -13,8 +13,9 @@ int main() {
 
 
 printf("Digite o codigo da carta: \n");
-scanf("%s", &codigo)
-printf("codigo da carta%sscodigo);
+scanf("%s", codigo);
+printf("codigo da carta: %s\n", codigo);
+    
 return 0;
     
 }
