@@ -8,6 +8,9 @@ int main() {
     float area;
     float pib;
     int turismo;
+    float densidade;
+    float pibpercapita;
+
 /// carta 1
 
 printf("digite o estado: \n");
@@ -29,7 +32,7 @@ printf("população: %d\n", populacao);
 
 printf("digite a area: \n");
 scanf("%f", &area);
-printf("area: %f\n", area);
+printf("area: %.2f\n", area);
 
 printf("Digite o pib: \n");
 scanf("%f", &pib);
@@ -39,10 +42,17 @@ printf("Digite a quatidade de pontos turisticos: \n");
 scanf("%d", &turismo);
 printf("Quantidade de pontos turísticos: %d\n", turismo);
 
+// calculo densidade populacional
+densidade = (float)(populacao / area);
+// calculo pib percapita
+pibpercapita = (float)( pib / populacao);
+
+printf("Densidade populacional: %.2f\n", densidade);
+printf("Pib percapita: %.2f\n", pibpercapita);
 
 /// carta 2 
 
-printf("digite o estado: \n");
+printf("Digite o estado: \n");
 scanf("%s", estado);
 printf("Estado: %s\n", estado);
 
@@ -61,7 +71,7 @@ printf("população: %d\n", populacao);
 
 printf("digite a area: \n");
 scanf("%f", &area);
-printf("area: %f\n", area);
+printf("area: %.2f\n", area);
 
 printf("Digite o pib: \n");
 scanf("%f", &pib);
@@ -70,6 +80,14 @@ printf("Pib: %f\n", pib);
 printf("Digite a quatidade de pontos turisticos: \n");
 scanf("%d", &turismo);
 printf("Quantidade de pontos turísticos: %d\n", turismo);
+
+// calculo densidade populacional
+densidade = (float)(populacao / area);
+// calculo pib percapita
+pibpercapita = (float)( pib / populacao);
+
+printf("Densidade populacional: %.2f\n", densidade);
+printf("Pib percapita: %.2f\n", pibpercapita);
 
 return 0;
     
